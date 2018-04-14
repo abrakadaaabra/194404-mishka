@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">Вязание на заказ</a>
@@ -137,5 +137,27 @@
         </a>
       </div>
     </footer>
+    <section class="popup popup--cart">
+      <h2 class="popup__title title">Добавить в корзину</h2>
+      <span class="popup__label">Выберите размер</span>
+      <form class="size-form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер S</span>
+          S
+          <input class="size-form__input" type="radio" />
+        </label>
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер M</span>
+          M
+          <input class="size-form__input" type="radio" />
+        </label>
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер L</span>
+          L
+          <input class="size-form__input" type="radio" />
+        </label>
+        <button class="size-form__button button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
