@@ -11,45 +11,39 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link--cart" href="#">Корзина: пока пуста</a>
             </li>
-          </ul>
-        </div>
+        </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main>
       <h1 class="visually-hidden">Интернет-магазин милых вещей "Мишка"</h1>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <div class="categories__top">
-          <span class="categories__title">Милые штуки ручной работы для дома</span>
-        </div>
-        <div class="categories__bottom">
-          <ul class="categories__list">
-            <li class="categories__item categories__item--interior">
-              <a class="categories__link" href="#">
-                <h3 class="categories__title">Предметы интерьера</h3>
+        <span class="categories__title">Милые штуки ручной работы для дома</span>
+        <ul class="categories__list">
+            <li class="categories__item category category--interior">
+              <a class="category__link" href="#">
+                <h3 class="category__title">Предметы интерьера</h3>
               </a>
             </li>
-            <li class="categories__item categories__item--toy">
-              <a class="categories__link" href="#">
-                <h3 class="categories__title">Детские игрушки</h3>
+            <li class="categories__item category category--toy">
+              <a class="category__link" href="#">
+                <h3 class="category__title">Детские игрушки</h3>
               </a>
             </li>
-          </ul>
-        </div>
+        </ul>
       </section>
       <section class="featured">
         <h2 class="visyally-hidden">Рекомендуемые товары</h2>
@@ -102,26 +96,18 @@
             <button class="slider__to-next" aria-label="Перейти следующему отзыву"></button>
           </div>
         </div>
-        <button class="reviews__button button">Написать</button>
+        <a class="reviews__button button" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__info">
-          <span class="contacts__label">e-mail:</span>
-          <div class="contats__content">
-            <a class="contacts__email" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
+        <span class="contacts__label">e-mail:</span>
+        <a class="contacts__email" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <span class="contacts__label">адрес:</span>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <div class="contacts__map map">
+          <img class="map__image" src="http://placehold.it/322x457" width="322" height="457" alt="Где нас найти"/>
         </div>
-        <div class="contacts__info">
-          <span class="contacts__label">адрес:</span>
-          <div class="contacts__content">
-            <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          </div>
-        </div>
-        <div class="contats__map map">
-          <img class="map__image" src="http://placehold.it/322x457" width="322" height="457" alt="Где нас найти" />
-        </div>
-        <button class="contacts__button button" type="button">Напишите нам</button>
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -133,7 +119,7 @@
       <div class="page-footer__made made">
         <span class="made__label">Разработано</span>
         <a class="made__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy" class="made__logo" />
+          <img class="made__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy"/>
         </a>
       </div>
     </footer>
@@ -144,17 +130,17 @@
         <label class="size-form__label">
           <span class="visually-hidden">Размер S</span>
           S
-          <input class="size-form__input" type="radio" />
+          <input class="size-form__input" type="radio" name="size" value="S" checked/>
         </label>
         <label class="size-form__label">
           <span class="visually-hidden">Размер M</span>
           M
-          <input class="size-form__input" type="radio" />
+          <input class="size-form__input" type="radio" name="size" value="M"/>
         </label>
         <label class="size-form__label">
           <span class="visually-hidden">Размер L</span>
           L
-          <input class="size-form__input" type="radio" />
+          <input class="size-form__input" type="radio" name="size" value="L"/>
         </label>
         <button class="size-form__button button" type="submit">Добавить</button>
       </form>
