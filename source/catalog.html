@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Интернет-магазин милых вещей для дома "Мишка"</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазина Мишка"/>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="page-title">Каталог товаров</h1>
+      <section class="products">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <article class="products__item product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик"/>
+            </a>
+            <a class="product__link" href="#">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <span class="product__properties">Рост 30 см, вес 200 г</span>
+            <span class="product__price">1 200 руб.</span>
+            <button class="product__cart" type="button" aria-label="Добавить в корзину"></button>
+        </article>
+        <article class="products__item product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья"/>
+            </a>
+            <a class="product__link" href="#">
+              <h3 class="product__title">Корзинка для белья</h3>
+            </a>
+            <span class="product__properties">Диаметр 15 см, высота 10 см</span>
+            <span class="product__price">690 руб.</span>
+            <button class="product__cart" type="button" aria-label="Добавить в корзину"></button>
+        </article>
+        <article class="products__item product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек"/>
+            </a>
+            <a class="product__link" href="#">
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
+            </a>
+            <span class="product__properties">Диаметр 30 см, высота 30 см</span>
+            <span class="product__price">1 500 руб.</span>
+            <button class="product__cart" type="button" aria-label="Добавить в корзину"></button>
+        </article>
+      </section>
+      <section class="making">
+        <h2 class="making__title">Процесс производства</h2>
+        <div class="making__process">
+          <img class="making__video" src="http://placehold.it/260x150" width="260" height="150" alt=""/>
+        </div>
+        <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="making__button button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a>
+        <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+        <a class="social__link social__link--twitter" href="#" aria-label="Мы в Твитере"></a>
+      </div>
+      <div class="page-footer__made made">
+        <span class="made__label">Разработано</span>
+        <a class="made__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy" class="made__logo" />
+        </a>
+      </div>
+    </footer>
+    <section class="popup popup--cart">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <span class="popup__label">Выберите размер</span>
+      <form class="size-form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер S</span>
+          S
+          <input class="size-form__input" type="radio" name="size" value="S" checked/>
+        </label>
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер M</span>
+          M
+          <input class="size-form__input" type="radio" name="size" value="M"/>
+        </label>
+        <label class="size-form__label">
+          <span class="visually-hidden">Размер L</span>
+          L
+          <input class="size-form__input" type="radio" name="size" value="L"/>
+        </label>
+        <button class="size-form__button button" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
