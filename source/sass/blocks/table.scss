@@ -1,0 +1,23 @@
+.table {
+  border-collapse: collapse;
+  margin-bottom: 21px;
+}
+
+.table__row {
+  padding-bottom: 20px;
+}
+
+.table__cell {
+  padding: 0;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $mainFont;
+  text-align: left;
+  color: $textColor;
+
+  &:first-child {
+    width: 100px;
+  }
+}

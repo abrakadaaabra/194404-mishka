@@ -1,0 +1,19 @@
+.reviews {
+  padding-top: 28px;
+  padding-bottom: 51px;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $mainFont;
+  color: $black;
+  margin: 0;
+  padding-bottom: 12px;
+}

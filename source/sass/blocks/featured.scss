@@ -1,0 +1,53 @@
+.featured {
+  padding-top: 27px;
+  padding-bottom: 44px;
+}
+
+.featured__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__title {
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $mainFont;
+  color: $black;
+}
+
+.featured__label {
+  display: block;
+  padding-bottom: 23px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: $mainFont;
+  color: $sea;
+  text-transform: uppercase;
+}
+
+.featured__description {
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $mainFont;
+  color: $textColor;
+}
+
+.featured__photo {
+  padding-bottom: 18px;
+}
+
+.featured__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $mainFont;
+  color: $textColor;
+  margin: 0 auto;
+  padding-bottom: 26px;
+}
