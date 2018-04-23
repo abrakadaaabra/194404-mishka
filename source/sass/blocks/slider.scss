@@ -27,7 +27,7 @@
 }
 
 .slider__to-prev {
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
 
   &::after {
     content: "";
@@ -42,5 +42,5 @@
 }
 
 .slider__to-next {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
 }

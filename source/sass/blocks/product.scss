@@ -1,0 +1,19 @@
+
+
+.product__photo {
+  display: block;
+  line-height: 0;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  font-weight: 700;
+  line-height: 24px;
+  font-family: $mainFont;
+  color: $black;
+  font-stretch: 17px;
+  margin: 0;
+}

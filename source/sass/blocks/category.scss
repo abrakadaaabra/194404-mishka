@@ -3,11 +3,11 @@
   position: relative;
   padding: 24px 0 31px;
 
-  &--interior {
+  &.category--interior {
     background-color: $sea;
   }
 
-  &--toy {
+  &.category--toy {
     background-color: #56c3b2;
   }
 }
@@ -33,7 +33,7 @@
       height: 62px;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("../../img/icon-interior.svg");
+      background-image: url("../img/icon-interior.svg");
     }
   }
 
@@ -45,7 +45,7 @@
       top: -3px;
       width: 60px;
       height: 60px;
-      background-image: url("../../img/icon-toy.svg");
+      background-image: url("../img/icon-toy.svg");
     }
   }
 }
