@@ -1,0 +1,49 @@
+.making {
+  padding-bottom: 58px;
+}
+
+.making__title {
+  position: relative;
+  margin: 0;
+  padding: 24px 90px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $mainFont;
+  color: $black;
+  border: 1px solid #ececec;
+  border-bottom: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 33px;
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.making__process {
+  line-height: 0;
+}
+
+.making__info {
+  padding: 26px 32px 32px;
+  border: 1px solid #ececec;
+  border-top: none;
+}
+
+.making__description {
+  margin: 0;
+  padding-bottom: 26px;
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}

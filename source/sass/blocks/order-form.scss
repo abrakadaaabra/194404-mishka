@@ -1,0 +1,62 @@
+.order-form {
+  padding-top: 24px;
+}
+
+.order-form__group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+
+  &:last-of-type {
+    padding-bottom: 16px;
+  }
+}
+
+.order-form__title {
+  margin: 0;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: $mainFont;
+  color: $sea;
+  text-transform: uppercase;
+}
+
+.order-form__radio {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order-form__checkbox {
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order-form__input {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order-form__description {
+  display: block;
+  padding-bottom: 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $mainFont;
+  color: $textColor;
+}
+
+.order-form__button {
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+.radio {
+  cursor: pointer;
+}
+
+.radio__label {
+  position: relative;
+  display: block;
+  min-height: 40px;
+  padding-top: 10px;
+  padding-left: 63px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $mainFont;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+  }
+}
+
+.radio__control:checked + .radio__label::before {
+  background-color: green;
+}

@@ -1,0 +1,33 @@
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+.input__label {
+  padding-bottom: 17px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $mainFont;
+  color: $black;
+}
+
+.input__control {
+  font-size: 17px;
+  line-height: 18px;
+  color: $textColor;
+  background: none;
+  border: none;
+}
