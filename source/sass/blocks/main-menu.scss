@@ -8,20 +8,73 @@
 
 .main-menu__item {
   height: 80px;
-  margin-left: 11px;
+  margin-left: 45px;
   padding: 26px 0;
 
-  &--logo {
+  &.main-menu__item--logo {
     margin: 0 auto;
     padding: 22px 0;
+  }
+
+  &.main-menu__item--search,
+  &.main-menu__item--cart {
+    margin: 0;
   }
 }
 
 .main-menu__link {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   font-family: $mainFont;
-  color: #000000;
+  color: $black;
   text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}
+
+.main-menu__link--search,
+.main-menu__link--cart {
+  padding-left: 45px;
+
+  &:hover {
+    .main-menu__search-icon {
+      fill: rgba($sea, 1);
+    }
+  }
+
+  &:active {
+    .main-menu__search-icon {
+      fill: rgba($sea, 0.3);
+    }
+  }
+}
+
+.main-menu__search-icon,
+.main-menu__cart-icon {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  box-sizing: content-box;
+  transition: all 0.3s ease;
+
+  fill: rgba($black, 0.2);
+}
+
+.main-menu__search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.main-menu__cart-icon {
+  width: 21px;
+  height: 18px;
 }
