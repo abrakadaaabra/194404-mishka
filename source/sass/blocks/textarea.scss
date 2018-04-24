@@ -1,0 +1,16 @@
+.textarea {
+  line-height: 0;
+}
+
+.textarea__control {
+  width: 100%;
+  min-height: 142px;
+  padding: 14px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $mainFont;
+  color: $textColor;
+  border: 2px solid $black;
+  resize: none;
+}
