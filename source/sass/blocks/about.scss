@@ -1,5 +1,6 @@
 .about {
   padding-top: 25px;
+  padding-bottom: 28px;
 }
 
 .about__wrapper {
@@ -29,6 +30,10 @@
   line-height: 20px;
   font-family: $mainFont;
   color: $black;
-  padding-top: 55px;
-  margin-bottom: 28px;
+  padding-top: 56px;
+  padding-bottom: 27px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }

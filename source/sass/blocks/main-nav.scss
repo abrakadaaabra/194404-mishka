@@ -2,10 +2,14 @@
   position: relative;
 }
 
+.main-nav__wrapper {
+  position: relative;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 30px;
   width: 21px;
   height: 20px;
   background-image: url("../img/icon-menu-open.svg");
@@ -14,7 +18,7 @@
   border: none;
   cursor: pointer;
 
-  &--active {
+  &.main-nav__toggle--open {
     background-image: url("../img/icon-menu-close.svg");
   }
 }

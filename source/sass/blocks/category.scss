@@ -1,51 +1,66 @@
 .category {
-  display: block;
   position: relative;
+  display: block;
   padding: 24px 0 31px;
-
-  &.category--interior {
-    background-color: $sea;
-  }
-
-  &.category--toy {
-    background-color: #56c3b2;
-  }
-}
-
-.category__link {
-  display: block;
-  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    opacity: 0.5;
-    display: block;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
   }
 
-  &--interior {
+  &:hover {
     &::after {
-      right: 5px;
-      top: -1px;
-      width: 40px;
-      height: 62px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("../img/icon-interior.svg");
+      opacity: 0.7;
     }
   }
 
-  &--toy {
+  &:active {
     &::after {
-      content: "";
-      position: absolute;
-      right: -3px;
-      top: -3px;
+      opacity: 0.3;
+    }
+
+    .category__title {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &.category--interior {
+    z-index: 2;
+    background-color: #63d1bb;
+    transition: background-color 0.3s ease;
+
+    &::after {
+      top: 24px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+  }
+
+  &.category--toy {
+    z-index: 3;
+    background-color: #56c3b2;
+    transition: background-color 0.3s ease;
+
+    &::after {
+      top: 21px;
+      right: 27px;
       width: 60px;
       height: 60px;
       background-image: url("../img/icon-toy.svg");
+    }
+
+    &:hover {
+      background-color: #46c1ae;
     }
   }
 }
@@ -58,4 +73,5 @@
   line-height: 24px;
   font-family: $mainFont;
   color: $white;
+  transition: color 0.3s ease;
 }
