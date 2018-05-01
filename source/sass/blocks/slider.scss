@@ -1,8 +1,12 @@
+.slider {
+  position: relative;
+}
+
 .slider__slides {
   margin: 0;
   padding: 0;
-  list-style: none;
   padding-bottom: 28px;
+  list-style: none;
 }
 
 .slider__controls {
@@ -15,11 +19,11 @@
   position: relative;
   flex-basis: 50%;
   height: 50px;
+  padding: 0;
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
   cursor: pointer;
-  padding: 0;
 }
 
 .slider__to-prev {
@@ -39,4 +43,24 @@
 
 .slider__to-next {
   background-image: url("../img/icon-right-arrow.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .slider__slides {
+    padding-bottom: 0;
+  }
+
+  .slider__controls {
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+    width: 167px;
+    border: none;
+  }
+
+  .slider__to-prev {
+    &::after {
+      display: none;
+    }
+  }
 }

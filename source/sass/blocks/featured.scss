@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.featured__top {
+  padding-bottom: 23px;
+}
+
 .featured__title {
   margin: 0;
   padding-bottom: 5px;
@@ -16,11 +20,11 @@
   line-height: 30px;
   font-family: $mainFont;
   color: $black;
+  z-index: 1;
 }
 
 .featured__label {
   display: block;
-  padding-bottom: 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -38,17 +42,131 @@
   color: $textColor;
 }
 
+.featured__properties {
+  margin-bottom: 21px;
+}
+
 .featured__photo {
   padding-bottom: 24px;
   line-height: 0;
+  background: red;
 }
 
 .featured__price {
+  display: block;
+  padding-bottom: 26px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   font-family: $mainFont;
+  text-align: center;
   color: $textColor;
-  margin: 0 auto;
-  padding-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .featured {
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .featured__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featured__top {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 49px;
+  }
+
+  .featured__title {
+    padding-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__label {
+    flex-basis: 127px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .featured__info {
+    position: relative;
+    flex-grow: 1;
+    padding-right: calc(100% - 290px);
+  }
+
+  .featured__description {
+    display: block;
+    padding-bottom: 43px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured__properties {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .featured__photo {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 333px;
+    height: 404px;
+    padding-bottom: 0;
+  }
+
+  .featured__price {
+    padding-bottom: 33px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured {
+    padding-top: 123px;
+  }
+
+  .featured__top {
+    justify-content: flex-start;
+    padding-left: 19px;
+  }
+
+  .featured__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .featured__label {
+    order: 1;
+    margin-right: 25px;
+  }
+
+  .featured__info {
+    padding-right: calc(100% - 467px);
+    padding-left: 175px;
+  }
+
+  .featured__description {
+    padding-bottom: 55px;
+  }
+
+  .featured__properties {
+    margin-bottom: 104px;
+  }
+
+  .featured__photo {
+    top: -158px;
+    width: 525px;
+    height: 636px;
+  }
 }

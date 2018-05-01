@@ -16,3 +16,26 @@
   text-align: center;
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding-top: 111px;
+    padding-bottom: 373px;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-bottom: 359px;
+  }
+
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

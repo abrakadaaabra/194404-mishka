@@ -4,10 +4,35 @@
   align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
+  background-color: #f1f1f1;
 }
 
 .page-footer__wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__social {
+  padding-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: block;
+    padding: 55px 0;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    margin-right: 24%;
+  }
+
+  .page-footer__social {
+    margin-right: auto;
+    padding-bottom: 0;
+  }
 }

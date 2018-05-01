@@ -11,11 +11,11 @@
 
 .contacts__title {
   margin: 0;
+  padding-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
   font-family: $mainFont;
   color: $black;
-  padding-bottom: 26px;
 }
 
 .contacts__item {
@@ -36,12 +36,12 @@
 
 .contacts__email {
   position: relative;
+  display: block;
   font-weight: 400;
-  font-stretch: 15px;
+  font-size: 15px;
   line-height: 30px;
   font-family: $mainFont;
   color: $textColor;
-  display: block;
 
   &::after {
     content: "";
@@ -55,15 +55,59 @@
 }
 
 .contacts__address {
+  display: block;
+  margin: 0;
   font-weight: 400;
-  font-stretch: 15px;
+  font-size: 15px;
   line-height: 30px;
   font-family: $mainFont;
   color: $textColor;
-  display: block;
-  margin: 0;
 }
 
 .contacts__map {
   padding-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 61px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    flex-basis: 50%;
+    padding-bottom: 49px;
+  }
+
+  .contacts__title {
+    flex-basis: 100%;
+    padding-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__label,
+  .contacts__email,
+  .contacts__address {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__label {
+    margin-right: 24px;
+  }
+
+  .contacts__map {
+    padding-bottom: 55px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin: 0 auto;
+  }
 }
