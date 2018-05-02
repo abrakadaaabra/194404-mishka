@@ -3,11 +3,6 @@
   padding-bottom: 28px;
 }
 
-.about__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .about__title {
   margin: 0;
   padding-bottom: 30px;
@@ -104,6 +99,7 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 48px;
+    padding-bottom: 43px;
   }
 
   .about__title {
@@ -117,11 +113,16 @@
   }
 
   .about__item {
-    flex-basis: 50%;
+    flex-basis: 45%;
+    margin-right: 5%;
     padding-top: 72px;
     padding-bottom: 40px;
     font-size: 20px;
     line-height: 22px;
+
+    &:nth-of-type(n+4) {
+      margin-right: 0;
+    }
 
     &.about__item--eco {
       order: 1;
@@ -151,7 +152,8 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding-top: 86px;
+    padding-top: 55px;
+    padding-bottom: 49px;
   }
 
   .about__wrapper {

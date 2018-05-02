@@ -11,3 +11,14 @@
   font-family: $mainFont;
   color: $textColor;
 }
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding-top: 72px;
+  }
+
+  .order__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

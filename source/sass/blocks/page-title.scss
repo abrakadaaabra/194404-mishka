@@ -1,4 +1,6 @@
 .page-title {
+  padding-top: 66px;
+  padding-bottom: 76px;
   background-color: #f1f1f1;
 }
 
@@ -10,10 +12,27 @@
 
 .page-title__text {
   margin: 0;
-  padding-top: 66px;
-  padding-bottom: 76px;
   font-size: 27px;
   line-height: 30px;
   font-family: $mainFont;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding-top: 51px;
+    padding-bottom: 82px;
+  }
+
+  .page-title__text {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title__text {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

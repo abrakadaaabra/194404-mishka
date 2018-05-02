@@ -77,11 +77,12 @@
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 0;
   }
 
   .contacts__item {
     flex-basis: 50%;
-    padding-bottom: 49px;
+    padding-bottom: 54px;
   }
 
   .contacts__title {
@@ -116,21 +117,29 @@
   .contacts {
     position: relative;
     padding-top: 140px;
-    padding-bottom: 98px;
+    padding-bottom: 105px;
   }
 
   .contacts__wrapper {
-    flex-direction: column;
     padding-left: 275px;
+    display: block;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+    width: 300px;
+
+    // padding-right: 583px;
   }
 
   .contacts__item {
+    width: 300px;
     padding-bottom: 30px;
+
+    &:last-of-type {
+      padding-bottom: 79px;
+    }
   }
 
   .contacts__map {
@@ -143,6 +152,5 @@
 
   .contacts__button {
     margin: 0;
-    margin-top: 42px;
   }
 }

@@ -3,6 +3,7 @@
 }
 
 .order-form__group {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 32px;
@@ -59,4 +60,45 @@
 
 .order-form__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 38px;
+    padding-bottom: 49px;
+    padding-left: 167px;
+  }
+
+  .order-form__title {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding-bottom: 0;
+  }
+
+  .order-form__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__radio {
+    flex-basis: 100%;
+    padding-bottom: 24px;
+  }
+
+  .order-form__checkbox {
+    flex-basis: 48%;
+    margin-bottom: 32px;
+
+    &:nth-of-type(2n+1) {
+      flex-basis: 52%;
+    }
+  }
+
+  .order-form__input {
+    flex-basis: 100%;
+    margin-bottom: 23px;
+  }
 }

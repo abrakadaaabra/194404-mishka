@@ -14,3 +14,10 @@
   border: 2px solid $black;
   resize: none;
 }
+
+@media (min-width: $tablet-width) {
+  .textarea__control {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

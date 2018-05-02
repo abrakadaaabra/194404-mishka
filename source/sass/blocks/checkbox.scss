@@ -29,3 +29,15 @@
 .checkbox__control:checked + .checkbox__label::before {
   background-color: green;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    font-size: 19px;
+    line-height: 18px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
