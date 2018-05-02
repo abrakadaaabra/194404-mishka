@@ -36,3 +36,9 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-right: 33%;
+  }
+}

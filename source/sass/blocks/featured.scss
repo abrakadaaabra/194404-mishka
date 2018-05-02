@@ -13,6 +13,7 @@
 }
 
 .featured__title {
+  z-index: 1;
   margin: 0;
   padding-bottom: 5px;
   font-weight: 700;
@@ -20,7 +21,6 @@
   line-height: 30px;
   font-family: $mainFont;
   color: $black;
-  z-index: 1;
 }
 
 .featured__label {
@@ -135,25 +135,28 @@
     padding-top: 123px;
   }
 
+  .featured__wrapper {
+    padding-left: 275px;
+    display: block;
+  }
+
   .featured__top {
+    position: relative;
     justify-content: flex-start;
-    padding-left: 19px;
   }
 
   .featured__title {
-    order: 2;
     font-size: 53px;
     line-height: 57px;
   }
 
   .featured__label {
-    order: 1;
-    margin-right: 25px;
-  }
-
-  .featured__info {
-    padding-right: calc(100% - 467px);
-    padding-left: 175px;
+    position: absolute;
+    top: 15px;
+    left: -133px;
+    display: block;
+    width: 80px;
+    padding-top: 0;
   }
 
   .featured__description {

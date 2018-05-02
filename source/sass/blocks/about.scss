@@ -148,3 +148,23 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 86px;
+  }
+
+  .about__wrapper {
+    padding-left: 275px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    flex-basis: 35%;
+    margin-right: 5%;
+  }
+}

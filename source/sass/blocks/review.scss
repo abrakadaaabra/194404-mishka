@@ -48,3 +48,10 @@
     width: 350px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    padding-bottom: 40px;
+    width: 775px;
+  }
+}
