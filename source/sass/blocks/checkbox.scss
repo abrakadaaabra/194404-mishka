@@ -5,8 +5,6 @@
 .checkbox__label {
   position: relative;
   display: block;
-  min-height: 40px;
-  padding-top: 10px;
   padding-left: 63px;
   font-weight: 700;
   font-size: 17px;
@@ -17,7 +15,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -11px;
     left: 0;
     display: block;
     width: 40px;
@@ -31,9 +29,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .checkbox {
+    flex-basis: 210px;
+  }
+
   .checkbox__label {
     font-size: 19px;
     line-height: 18px;
+    padding-top: 15px;
+    padding-left: 80px;
 
     &::before {
       width: 52px;

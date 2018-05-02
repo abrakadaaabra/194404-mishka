@@ -4,18 +4,25 @@
 
 .order-form__group {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 32px;
+  padding-bottom: 1px;
 
-  &:last-of-type {
-    padding-bottom: 16px;
+  &.order-form__group--person {
+    padding-bottom: 9px;
+  }
+
+  &.order-form__group--tel {
+    padding-bottom: 10px;
+  }
+
+  &.order-form__group--email {
+    padding-bottom: 10px;
   }
 }
 
+
 .order-form__title {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -25,27 +32,30 @@
 }
 
 .order-form__radio {
-  margin-bottom: 13px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  display: block;
+  min-height: 40px;
+  margin: 20px 0;
 }
 
 .order-form__checkbox {
-  margin-bottom: 21px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  display: block;
+  min-height: 40px;
+  margin: 20px 0 21px;
 }
 
 .order-form__input {
-  margin-bottom: 22px;
+  display: block;
+  margin: 13px 0 22px;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:first-of-type:last-of-type {
+    margin: 7px 0 22px;
   }
+}
+
+.order-form__textarea {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .order-form__description {
@@ -60,45 +70,4 @@
 
 .order-form__button {
   width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .order-form__group {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 38px;
-    padding-bottom: 49px;
-    padding-left: 167px;
-  }
-
-  .order-form__title {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    padding-bottom: 0;
-  }
-
-  .order-form__description {
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  .order-form__radio {
-    flex-basis: 100%;
-    padding-bottom: 24px;
-  }
-
-  .order-form__checkbox {
-    flex-basis: 48%;
-    margin-bottom: 32px;
-
-    &:nth-of-type(2n+1) {
-      flex-basis: 52%;
-    }
-  }
-
-  .order-form__input {
-    flex-basis: 100%;
-    margin-bottom: 23px;
-  }
 }

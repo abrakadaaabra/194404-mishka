@@ -19,8 +19,21 @@
 
 @media (min-width: $tablet-width) {
   .intro {
+    position: relative;
     padding-top: 111px;
     padding-bottom: 374px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -41px;
+      left: 0;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: 41px;
+      background-color: #f9f9f9;
+    }
   }
 
   .intro__title {

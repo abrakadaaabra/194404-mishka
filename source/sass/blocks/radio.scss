@@ -5,8 +5,6 @@
 .radio__label {
   position: relative;
   display: block;
-  min-height: 40px;
-  padding-top: 10px;
   padding-left: 63px;
   font-weight: 700;
   font-size: 17px;
@@ -17,7 +15,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -9px;
     left: 0;
     display: block;
     width: 40px;

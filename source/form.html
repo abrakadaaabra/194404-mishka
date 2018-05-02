@@ -63,7 +63,7 @@
         <div class="container">
           <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form action="https://echo.htmlacademy.ru" method="POST" class="order__form order-form">
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--type">
               <h3 class="order-form__title">Тип</h3>
               <label class="order-form__radio radio">
                 <input class="radio__control visually-hidden" type="radio" name="type" value="accessory" checked/>
@@ -74,7 +74,7 @@
                 <span class="radio__label">Детская игрушка</span>
               </label>
             </div>
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--color">
               <h3 class="order-form__title">Цвет</h3>
               <label class="order-form__checkbox checkbox">
                 <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="white" checked/>
@@ -101,7 +101,7 @@
                 <span class="checkbox__label">Оранжевый</span>
               </label>
             </div>
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--person">
               <h3 class="order-form__title">ФИО</h3>
               <label class="order-form__input input">
                 <span class="input__label">Имя:</span>
@@ -116,21 +116,21 @@
                 <input class="input__control" type="text" name="middleName" placeholder="Отчество, если желаете" />
               </label>
             </div>
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--tel">
               <h3 class="order-form__title">Тел</h3>
-              <label class="order-form__input input input--phone">
+              <label class="order-form__input order-form__input--phone input">
                 <span class="visually-hidden">Номер телефона:</span>
                 <input class="input__control" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" />
               </label>
             </div>
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--email">
               <h3 class="order-form__title">E-mail</h3>
-              <label class="order-form__input input input--email">
+              <label class="order-form__input order-form__input--email input">
                 <span class="visually-hidden">E-mail:</span>
                 <input class="input__control" type="email" name="email" placeholder="Ваш Email*" />
               </label>
             </div>
-            <div class="order-form__group">
+            <div class="order-form__group order-form__group--extra">
               <h3 class="order-form__title">Доп</h3>
               <label class="order-form__textarea textarea">
                 <span class="visually-hidden">Пожелания к заказу</span>

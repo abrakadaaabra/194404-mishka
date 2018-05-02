@@ -2,14 +2,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
-  border-bottom: 2px solid $black;
 }
 
 .input__label {
-  padding-bottom: 17px;
   font-weight: 700;
   font-size: 17px;
+  padding-bottom: 15px;
   line-height: 18px;
   font-family: $mainFont;
   color: $black;
@@ -18,10 +16,12 @@
 .input__control {
   font-size: 17px;
   line-height: 18px;
+  padding-bottom: 16px;
   font-family: $mainFont;
   color: $textColor;
   background: none;
   border: none;
+  border-bottom: 2px solid $black;
 }
 
 @media (min-width: $tablet-width) {

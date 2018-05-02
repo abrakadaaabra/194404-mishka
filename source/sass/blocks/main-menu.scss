@@ -111,16 +111,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -100%;
-      left: -100%;
-      height: 89px;
-      background-color: #ffffff;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -133,6 +123,8 @@
   }
 
   .main-menu__item {
+    z-index: 2;
+
     &::after {
       display: none;
     }
