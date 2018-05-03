@@ -27,12 +27,22 @@
 @media (min-width: $tablet-width) {
   .input {
     flex-direction: row;
-    border-bottom: none;
+    align-items: center;
   }
 
   .input__label,
   .input__control {
     font-size: 19px;
     line-height: 18px;
+    padding: 0;
+  }
+
+  .input__label {
+    margin-right: 25px;
+  }
+
+  .input__control {
+    padding: 13px 16px;
+    flex-grow: 1;
   }
 }

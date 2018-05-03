@@ -1,28 +1,9 @@
-.order-form {
-  padding-top: 24px;
-}
-
 .order-form__group {
   position: relative;
-  padding-bottom: 1px;
-
-  &.order-form__group--person {
-    padding-bottom: 9px;
-  }
-
-  &.order-form__group--tel {
-    padding-bottom: 10px;
-  }
-
-  &.order-form__group--email {
-    padding-bottom: 10px;
-  }
 }
-
 
 .order-form__title {
   margin: 0;
-  padding-bottom: 15px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -31,31 +12,48 @@
   text-transform: uppercase;
 }
 
+.order-form__controls-group {
+  &.order-form__controls-group--radio {
+    margin-bottom: -11px;
+    padding: 32px 0 33px;
+  }
+
+  &.order-form__controls-group--checkbox {
+    margin-bottom: -21px;
+    padding: 25px 0 32px;
+  }
+
+  &.order-form__controls-group--input {
+    margin-bottom: -22px;
+    padding: 28px 0 31px;
+  }
+}
+
 .order-form__radio {
   display: block;
-  min-height: 40px;
-  margin: 20px 0;
+  margin-bottom: 11px;
 }
 
 .order-form__checkbox {
   display: block;
-  min-height: 40px;
-  margin: 20px 0 21px;
+  margin-bottom: 21px;
 }
 
 .order-form__input {
   display: block;
-  margin: 13px 0 22px;
+  margin-bottom: 22px;
 
-  &:first-of-type:last-of-type {
-    margin: 7px 0 22px;
+  &.order-form__input--single {
+    margin-bottom: 32px;
+    padding-top: 22px;
   }
 }
 
 .order-form__textarea {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  padding-top: 25px;
 }
 
 .order-form__description {
@@ -70,4 +68,148 @@
 
 .order-form__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .order-form__group {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 50px;
+
+
+    &:nth-of-type(2n) {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order-form__title {
+    flex-shrink: 0;
+    // flex-basis: 25%;
+    flex-basis: 167px;
+  }
+
+  .order-form__controls-group {
+    flex-grow: 1;
+    flex-basis: calc(100% - 167px);
+    // flex-basis: 75%;
+    padding: 0;
+
+    &.order-form__controls-group--radio {
+      margin-bottom: -24px;
+      padding: 0;
+    }
+
+    &.order-form__controls-group--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -24px;
+      padding: 0;
+    }
+
+    &.order-form__controls-group--input {
+      margin-bottom: -24px;
+      padding: 0;
+    }
+  }
+
+  .order-form__radio {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .order-form__checkbox {
+    display: block;
+    margin-bottom: 24px;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 52px;
+    }
+  }
+
+  .order-form__input {
+    display: block;
+    margin-bottom: 22px;
+
+    &.order-form__input--single {
+      flex-basis: calc(100% - 167px);
+      margin-bottom: 22px;
+      padding-top: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-form__textarea {
+    display: block;
+    flex-basis: calc(100% - 167px);
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .order-form__button {
+    flex-basis: 230px;
+    order: 1;
+    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .order-form__description {
+    order: 2;
+    margin-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__title {
+    flex-basis: 112px;
+    margin-left: 64px;
+  }
+
+  .order-form__group {
+    // padding: 50px 114px;
+    padding: 50px;
+  }
+
+  .order-form__controls-group {
+    // flex-basis: calc(100% - 112px);
+    flex-basis: calc(100% - 231px);
+  }
+
+  .order-form__checkbox {
+    margin-right: 52px;
+  }
+
+  .order-form__input {
+    &.order-form__input--single {
+      // flex-basis: calc(100% - 112px);
+      flex-basis: calc(100% - 231px);
+    }
+  }
+
+  .order-form__textarea {
+    margin-bottom: -2px;
+    flex-basis: calc(100% - 231px);
+  }
+
+  .order-form__button {
+    margin-left: 225px;
+  }
+
+  .order-form__description {
+    margin-right: 225px;
+  }
 }

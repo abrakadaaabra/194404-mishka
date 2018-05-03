@@ -21,8 +21,8 @@
 @media (min-width: $tablet-width) {
   .page-title {
     position: relative;
-    padding-top: 51px;
-    padding-bottom: 82px;
+    padding: 52px 0;
+    min-height: 183px;
 
     &::before {
       content: "";

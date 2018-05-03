@@ -1,5 +1,9 @@
 .checkbox {
   cursor: pointer;
+  min-height: 40px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox__label {
@@ -30,16 +34,20 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
+    min-height: 52px;
     flex-basis: 210px;
+    display: flex;
+    align-items: center;
   }
 
   .checkbox__label {
     font-size: 19px;
     line-height: 18px;
-    padding-top: 15px;
     padding-left: 80px;
 
     &::before {
+      top: -14px;
+      left: 1px;
       width: 52px;
       height: 52px;
     }

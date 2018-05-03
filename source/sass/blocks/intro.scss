@@ -1,6 +1,6 @@
 .intro {
-  padding-top: 71px;
-  padding-bottom: 122px;
+  padding: 71px 0;
+  min-height: 283px;
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,18 +20,19 @@
 @media (min-width: $tablet-width) {
   .intro {
     position: relative;
-    padding-top: 111px;
-    padding-bottom: 374px;
+    padding: 111px 0;
+    min-height: 585px;
+    background-position: center 23px;
 
     &::before {
       content: "";
       position: absolute;
       top: -41px;
       left: 0;
-      z-index: 1;
+      z-index: -1;
       display: block;
       width: 100%;
-      height: 41px;
+      height: 250px;
       background-color: #f9f9f9;
     }
   }
@@ -44,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-bottom: 359px;
+    min-height: 584px;
   }
 
   .intro__title {
