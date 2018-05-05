@@ -52,7 +52,7 @@
 
   .slider__controls {
     position: absolute;
-    right: 3px;
+    right: 6px;
     bottom: 4px;
     width: 167px;
     border: none;
@@ -62,5 +62,11 @@
     &::after {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__controls {
+    right: -172px;
   }
 }

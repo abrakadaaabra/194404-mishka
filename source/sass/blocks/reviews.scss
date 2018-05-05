@@ -10,6 +10,7 @@
 }
 
 .reviews__title {
+  position: relative;
   margin: 0;
   padding-bottom: 12px;
   font-weight: 700;
@@ -27,12 +28,15 @@
   .reviews {
     padding-top: 76px;
     padding-bottom: 133px;
+  }
 
+  .reviews__wrapper {
+    position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -78px;
       left: 0;
       width: 350px;
       height: 457px;
@@ -40,11 +44,8 @@
     }
   }
 
-  .reviews__wrapper {
-    position: relative;
-  }
-
   .reviews__title {
+    position: relative;
     padding-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
@@ -66,15 +67,15 @@
   .reviews {
     padding-top: 70px;
     padding-bottom: 186px;
-
-    &::before {
-      top: 0;
-      left: 50px;
-    }
   }
 
   .reviews__wrapper {
-    padding-left: 225px;
+    padding: 0 225px;
+
+    &::before {
+      top: -70px;
+      left: 50px;
+    }
   }
 
   .reviews__title {
