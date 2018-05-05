@@ -1,5 +1,6 @@
 .order-form__group {
   position: relative;
+  padding: 0 30px;
 }
 
 .order-form__title {
@@ -56,6 +57,10 @@
   padding-top: 25px;
 }
 
+.order-form__bottom {
+  padding: 0 30px;
+}
+
 .order-form__description {
   display: block;
   padding-bottom: 31px;
@@ -71,17 +76,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  .order-form__group {
+  .order-form__container {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
     align-items: baseline;
+  }
+
+  .order-form__group {
+    flex-basis: 100%;
     padding: 50px;
 
 
@@ -92,14 +95,12 @@
 
   .order-form__title {
     flex-shrink: 0;
-    // flex-basis: 25%;
     flex-basis: 167px;
   }
 
   .order-form__controls-group {
     flex-grow: 1;
     flex-basis: calc(100% - 167px);
-    // flex-basis: 75%;
     padding: 0;
 
     &.order-form__controls-group--radio {
@@ -156,16 +157,19 @@
     margin-bottom: 3px;
   }
 
+  .order-form__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
   .order-form__button {
     flex-basis: 230px;
     order: 1;
-    margin-right: auto;
-    margin-left: 50px;
   }
 
   .order-form__description {
     order: 2;
-    margin-right: 50px;
     padding-top: 9px;
     padding-bottom: 0;
     font-size: 17px;
@@ -176,16 +180,24 @@
 @media (min-width: $desktop-width) {
   .order-form__title {
     flex-basis: 112px;
-    margin-left: 64px;
+  }
+
+  .order-form__container {
+    max-width: 1050px;
+    padding-left: 63px;
+    margin: 0 auto;
+    padding-right: 175px;
+
+    &.order-form__container--color {
+      padding-right: 0;
+    }
   }
 
   .order-form__group {
-    // padding: 50px 114px;
     padding: 50px;
   }
 
   .order-form__controls-group {
-    // flex-basis: calc(100% - 112px);
     flex-basis: calc(100% - 231px);
   }
 
@@ -195,21 +207,18 @@
 
   .order-form__input {
     &.order-form__input--single {
-      // flex-basis: calc(100% - 112px);
-      flex-basis: calc(100% - 231px);
+      flex-basis: calc(100% - 112px);
     }
   }
 
   .order-form__textarea {
+    flex-basis: calc(100% - 112px);
     margin-bottom: -2px;
-    flex-basis: calc(100% - 231px);
   }
 
-  .order-form__button {
-    margin-left: 225px;
-  }
-
-  .order-form__description {
-    margin-right: 225px;
+  .order-form__bottom {
+    padding: 0 225px;
+    margin: 0 auto;
+    max-width: 1150px;
   }
 }

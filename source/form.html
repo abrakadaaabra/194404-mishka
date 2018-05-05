@@ -63,10 +63,10 @@
       </section>
       <section class="order">
         <h2 class="visually-hidden">Форма заказа</h2>
-        <div class="order__wrapper container">
-          <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form action="https://echo.htmlacademy.ru" method="POST" class="order__form order-form">
-            <div class="order-form__group">
+        <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="order__form order-form">
+          <div class="order-form__group">
+            <div class="order-form__container">
               <h3 class="order-form__title">Тип</h3>
               <div class="order-form__controls-group order-form__controls-group--radio">
                 <label class="order-form__radio radio">
@@ -79,7 +79,9 @@
                 </label>
               </div>
             </div>
-            <div class="order-form__group">
+          </div>
+          <div class="order-form__group">
+            <div class="order-form__container order-form__container--color">
               <h3 class="order-form__title">Цвет</h3>
               <div class="order-form__controls-group order-form__controls-group--checkbox">
                 <label class="order-form__checkbox checkbox">
@@ -108,7 +110,9 @@
                 </label>
               </div>
             </div>
-            <div class="order-form__group">
+          </div>
+          <div class="order-form__group">
+            <div class="order-form__container">
               <h3 class="order-form__title">ФИО</h3>
               <div class="order-form__controls-group order-form__controls-group--input">
                 <label class="order-form__input input">
@@ -125,7 +129,9 @@
                 </label>
               </div>
             </div>
-            <div class="order-form__group">
+          </div>
+          <div class="order-form__group">
+            <div class="order-form__container">
               <h3 class="order-form__title">
                 <label for="phone">Тел</label>
               </h3>
@@ -139,16 +145,21 @@
                 <input class="input__control" type="email" name="email" id="email" placeholder="Ваш Email*" />
               </div>
             </div>
-            <div class="order-form__group">
+          </div>
+          <div class="order-form__group">
+            <div class="order-form__container">
               <h3 class="order-form__title">
                 <label for="extra">Доп</label>
               </h3>
               <textarea class="order-form__textarea textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <span class="order-form__description">*Поля обязательны для заполнения</span>
+          </div>
+          <div class="order-form__bottom">
+            <span class="order-form__description">
+              *Поля обязательны для заполнения</span>
             <button class="order-form__button button" type="submit">Отправить заказ</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
