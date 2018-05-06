@@ -1,8 +1,4 @@
 .textarea {
-  line-height: 0;
-}
-
-.textarea__control {
   width: 100%;
   min-height: 142px;
   padding: 14px;
@@ -13,4 +9,17 @@
   color: $textColor;
   border: 2px solid $black;
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    width: calc(100% - 112px);
+  }
 }

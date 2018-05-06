@@ -2,7 +2,36 @@
   padding-top: 30px;
 }
 
-.products__wrapper {
-  display: flex;
-  flex-direction: column;
+.products__item {
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    padding-top: 80px;
+  }
+
+  .products__item {
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    padding-top: 129px;
+    padding-bottom: 3px;
+  }
+
+  .products__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    margin-right: 51px;
+
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
+    }
+  }
 }

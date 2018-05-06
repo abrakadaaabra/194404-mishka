@@ -1,6 +1,5 @@
 .table {
   border-collapse: collapse;
-  margin-bottom: 21px;
 }
 
 .table__row {
@@ -18,6 +17,6 @@
   color: $textColor;
 
   &:first-child {
-    width: 100px;
+    width: 99px;
   }
 }

@@ -1,4 +1,8 @@
 .checkbox {
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  min-height: 40px;
   cursor: pointer;
 }
 
@@ -6,7 +10,7 @@
   position: relative;
   display: block;
   min-height: 40px;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 63px;
   font-weight: 700;
   font-size: 17px;
@@ -28,4 +32,26 @@
 
 .checkbox__control:checked + .checkbox__label::before {
   background-color: green;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    display: flex;
+    flex-basis: 210px;
+    align-items: center;
+    min-height: 52px;
+  }
+
+  .checkbox__label {
+    padding-left: 80px;
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 13px;
+
+    &::before {
+      left: 1px;
+      width: 52px;
+      height: 52px;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 // normalize
-@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/normalize-scss/sass/normalize/_import-now.scss";
 // global
 @import "./global/variables.scss";
 @import "./global/fonts.scss";
@@ -8,13 +8,13 @@
 // button
 @import "./blocks/button.scss";
 // header
+@import "./blocks/page-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-menu.scss";
 // categories
 @import "./blocks/categories.scss";
-@import "./blocks/categories-menu.scss";
 @import "./blocks/category.scss";
 // featured
 @import "./blocks/featured.scss";

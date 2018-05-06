@@ -5,7 +5,7 @@
 .making__title {
   position: relative;
   margin: 0;
-  padding: 24px 90px;
+  padding: 24px 0 24px 90px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -32,8 +32,13 @@
   line-height: 0;
 }
 
+.making__video {
+  width: 100%;
+}
+
 .making__info {
-  padding: 26px 32px 32px;
+  min-height: 257px;
+  padding: 26px 33px;
   border: 1px solid #ececec;
   border-top: none;
 }
@@ -41,9 +46,93 @@
 .making__description {
   margin: 0;
   padding-bottom: 26px;
-  font-family: $mainFont;
-  color: $textColor;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: $mainFont;
+  color: $textColor;
+}
+
+@media (min-width: $tablet-width) {
+  .making {
+    padding-bottom: 63px;
+  }
+
+  .making__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .making__title {
+    order: 2;
+    padding: 37px 0 10px 105px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 37px;
+      left: 41px;
+    }
+  }
+
+  .making__process {
+    order: 1;
+    min-height: 455px;
+  }
+
+  .making__info {
+    order: 3;
+    min-height: 215px;
+    padding: 22px 39px;
+  }
+
+  .making__description {
+    padding-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .making__button {
+    max-width: 584px;
+    margin-left: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .making {
+    padding-bottom: 105px;
+  }
+
+  .making__title {
+    width: 369px;
+    margin-left: auto;
+    padding: 95px 78px 33px;
+
+    &::before {
+      top: 46px;
+      left: 78px;
+    }
+  }
+
+  .making__info {
+    width: 369px;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 57px;
+    padding-left: 78px;
+    padding-bottom: 59px;
+  }
+
+  .making__description {
+    padding-bottom: 46px;
+  }
+
+  .making__process {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: calc(100% - 469px);
+    min-height: 455px;
+  }
 }

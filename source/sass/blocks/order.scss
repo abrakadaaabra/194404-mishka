@@ -3,11 +3,41 @@
   padding-bottom: 55px;
 }
 
-.order__text {
+.order__intro {
   margin: 0;
+  padding: 0 30px 24px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   font-family: $mainFont;
   color: $textColor;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding-top: 73px;
+    padding-bottom: 50px;
+  }
+
+  .order__intro {
+    padding: 0 50px 10px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding-top: 122px;
+    padding-bottom: 50px;
+  }
+
+  .order__intro {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 225px 5px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

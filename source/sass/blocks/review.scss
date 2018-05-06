@@ -4,29 +4,63 @@
 
 .review__text {
   margin: 0;
-  font-family: $mainFont;
-  color: $textColor;
+  padding-bottom: 27px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  padding-bottom: 27px;
+  font-family: $mainFont;
+  color: $textColor;
 }
 
 .review__author {
-  font-family: $mainFont;
-  color: $black;
+  display: block;
+  padding-bottom: 3px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  display: block;
-  padding-bottom: 3px;
+  font-family: $mainFont;
+  color: $black;
 }
 
 .review__contact {
-  font-family: $mainFont;
-  color: $textColor;
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
+  font-family: $mainFont;
+  color: $textColor;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding-top: 0;
+  }
+
+  .review__text {
+    padding-bottom: 59px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__author,
+  .review__contact {
+    display: block;
+    width: 350px;
+  }
+
+  .review__author {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    padding-bottom: 40px;
+    width: 775px;
+  }
+
+  .review__author {
+    font-size: 17px;
+  }
 }
