@@ -1,14 +1,16 @@
 .checkbox {
-  cursor: pointer;
-  min-height: 40px;
-  box-sizing: content-box;
   display: flex;
   align-items: center;
+  box-sizing: content-box;
+  min-height: 40px;
+  cursor: pointer;
 }
 
 .checkbox__label {
   position: relative;
   display: block;
+  min-height: 40px;
+  padding-top: 11px;
   padding-left: 63px;
   font-weight: 700;
   font-size: 17px;
@@ -19,7 +21,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -11px;
+    top: 0;
     left: 0;
     display: block;
     width: 40px;
@@ -34,19 +36,19 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    min-height: 52px;
-    flex-basis: 210px;
     display: flex;
+    flex-basis: 210px;
     align-items: center;
+    min-height: 52px;
   }
 
   .checkbox__label {
+    padding-left: 80px;
     font-size: 19px;
     line-height: 18px;
-    padding-left: 80px;
+    padding-top: 13px;
 
     &::before {
-      top: -14px;
       left: 1px;
       width: 52px;
       height: 52px;

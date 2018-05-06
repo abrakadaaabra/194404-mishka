@@ -16,7 +16,7 @@
 .order-form__controls-group {
   &.order-form__controls-group--radio {
     margin-bottom: -11px;
-    padding: 32px 0 33px;
+    padding: 23px 0 24px;
   }
 
   &.order-form__controls-group--checkbox {
@@ -32,12 +32,12 @@
 
 .order-form__radio {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .order-form__checkbox {
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 
 .order-form__input {
@@ -85,7 +85,7 @@
 
   .order-form__group {
     flex-basis: 100%;
-    padding: 50px;
+    padding: 50px 50px;
 
 
     &:nth-of-type(2n) {
@@ -111,7 +111,7 @@
     &.order-form__controls-group--checkbox {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: -24px;
+      margin-bottom: -26px;
       padding: 0;
     }
 
@@ -128,7 +128,7 @@
 
   .order-form__checkbox {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     &:nth-of-type(2n+1) {
       margin-right: 52px;

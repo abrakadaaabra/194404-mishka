@@ -1,15 +1,16 @@
 .radio {
   display: flex;
-  align-items: center;
   box-sizing: content-box;
   min-height: 40px;
   cursor: pointer;
 }
 
 .radio__label {
+  min-height: 40px;
   position: relative;
   display: block;
   padding-left: 63px;
+  padding-top: 12px;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -19,7 +20,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
+    top: 0;
     left: 0;
     display: block;
     width: 40px;
@@ -45,7 +46,6 @@
     line-height: 18px;
 
     &::before {
-      top: -16px;
       width: 52px;
       height: 52px;
     }
