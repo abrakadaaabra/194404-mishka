@@ -1,7 +1,28 @@
 .map {
+  box-sizing: content-box;
+  width: 100%;
+  height: 457px;
   line-height: 0;
 }
 
-.map__image {
+.map__content {
   width: 100%;
+  height: 100%;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.map__pin {
+  position: absolute;
+  top: 145px;
+  left: 138px;
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 525px;
+    height: 457px;
+  }
 }
