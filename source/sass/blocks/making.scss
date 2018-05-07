@@ -29,11 +29,25 @@
 }
 
 .making__process {
+  position: relative;
   line-height: 0;
 }
 
 .making__video {
   width: 100%;
+  height: auto;
+}
+
+.making__play {
+  position: absolute;
+  top: 36px;
+  left: 73px;
+  width: 101px;
+  height: 77px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .making__info {
@@ -81,6 +95,13 @@
     min-height: 455px;
   }
 
+  .making__play {
+    top: 188px;
+    left: 283px;
+    width: 102px;
+    height: 78px;
+  }
+
   .making__info {
     order: 3;
     min-height: 215px;
@@ -120,8 +141,8 @@
     margin-left: auto;
     padding-top: 0;
     padding-right: 57px;
-    padding-left: 78px;
     padding-bottom: 59px;
+    padding-left: 78px;
   }
 
   .making__description {
@@ -134,5 +155,10 @@
     left: 50px;
     width: calc(100% - 469px);
     min-height: 455px;
+  }
+
+  .making__play {
+    top: 189px;
+    left: 291px;
   }
 }
