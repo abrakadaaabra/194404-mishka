@@ -8,6 +8,16 @@
   text-align: center;
   color: $textColor;
   text-transform: uppercase;
-  border: 2px solid $black;
+  border: 2px solid $grey;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
