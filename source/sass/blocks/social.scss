@@ -1,6 +1,8 @@
 .social {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .social__link {
@@ -29,5 +31,11 @@
     width: 23px;
     height: 20px;
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: auto;
   }
 }
