@@ -24,6 +24,15 @@
   background-position: center center;
   border: none;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__to-prev {

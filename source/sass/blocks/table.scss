@@ -1,20 +1,20 @@
 .table {
   border-collapse: collapse;
-}
-
-.table__row {
-  padding-bottom: 20px;
+  width: 100%;
 }
 
 .table__cell {
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  padding-top: 7px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   font-family: $mainFont;
   text-align: left;
   color: $textColor;
+
+  border-bottom: 1px solid #ececec;
 
   &:first-child {
     width: 99px;

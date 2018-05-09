@@ -1,5 +1,4 @@
 .categories {
-  position: relative;
   background-color: #f9f9f9;
 }
 
@@ -10,7 +9,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .categories {
+  .categories__wrapper {
+    position: relative;
+    display: flex;
+
+
     &::after {
       content: "";
       position: absolute;
@@ -25,14 +28,10 @@
       background-size: auto 24px;
     }
   }
-
-  .categories__wrapper {
-    display: flex;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .categories {
+  .categories__wrapper {
     &::after {
       bottom: -15px;
       height: 34px;

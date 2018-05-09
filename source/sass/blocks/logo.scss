@@ -21,6 +21,20 @@
   }
 }
 
+.logo--footer .logo__image {
+  fill: #231f20;
+  transition: fill 0.3s ease;
+}
+
+.logo--footer:hover .logo__image {
+  fill: #46c1ae;
+  opacity: 1;
+}
+
+.logo--footer:active .logo__image {
+  opacity: 0.3;
+}
+
 .logo__image {
   width: 100%;
 }
