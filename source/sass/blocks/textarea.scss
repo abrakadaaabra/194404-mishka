@@ -8,7 +8,13 @@
   font-family: $mainFont;
   color: $textColor;
   border: 2px solid $black;
-  resize: none;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
 }
 
 @media (min-width: $tablet-width) {

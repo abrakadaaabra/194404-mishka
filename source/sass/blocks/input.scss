@@ -22,12 +22,31 @@
   background: none;
   border: none;
   border-bottom: 2px solid $black;
+  transition: border-color 0.3s ease;
+
+  &--email,
+  &--tel {
+    padding-top: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.input__control:hover + .input__icon,
+.input__control:focus + .input__icon {
+  fill: rgba(#62d1ba, 1);
 }
 
 .input__icon {
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: fill 0.3s ease;
+
+  fill: rgba($black, 0.2);
 
   &.input__icon--phone {
     right: 9px;
@@ -69,6 +88,18 @@
 
     &.input__icon--email {
       right: 21px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input__icon {
+    &.input__icon--phone {
+      right: 8px;
+    }
+
+    &.input__icon--email {
+      right: 4px;
     }
   }
 }
