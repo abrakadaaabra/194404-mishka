@@ -4,39 +4,49 @@
   height: 35px;
   line-height: 0;
   cursor: pointer;
-  transition: opacity 0.3s ease;
-
-  &.logo--footer {
-    display: none;
-    width: 102px;
-    height: 34px;
-  }
 
   &:hover {
-    opacity: 0.6;
+    .logo__image {
+      opacity: 0.6;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    .logo__image {
+      opacity: 0.3;
+    }
   }
 }
 
-.logo--footer .logo__image {
-  fill: #231f20;
-  transition: fill 0.3s ease;
-}
+.logo.logo--footer {
+  display: none;
+  width: 102px;
+  height: 34px;
 
-.logo--footer:hover .logo__image {
-  fill: #46c1ae;
-  opacity: 1;
-}
+  .logo__image {
+    transition: fill 0.3s ease, opacity 0.3s ease;
 
-.logo--footer:active .logo__image {
-  opacity: 0.3;
+    fill: #231f20;
+  }
+
+  &:hover {
+    .logo__image {
+      opacity: 1;
+
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .logo__image {
+      opacity: 0.3;
+    }
+  }
 }
 
 .logo__image {
   width: 100%;
+  transition: opacity 0.3s ease;
 }
 
 @media (min-width: $tablet-width) {
