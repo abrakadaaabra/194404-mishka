@@ -22,7 +22,16 @@
 
 .made__logo {
   width: 100%;
-  height: 100%;
+  fill: #63d1bb;
+  transition: fill 0.3s ease, opacity 0.3s ease;
+}
+
+.made__link:hover .made__logo {
+  fill: #46c1ae;
+}
+
+.made__link:active .made__logo {
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {

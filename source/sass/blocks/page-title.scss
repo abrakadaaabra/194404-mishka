@@ -35,6 +35,20 @@
       height: 41px;
       background-color: #f1f1f1;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -14px;
+      left: 0;
+      display: block;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: auto 24px;
+    }
   }
 
   .page-title__text {

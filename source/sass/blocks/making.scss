@@ -2,6 +2,14 @@
   padding-bottom: 58px;
 }
 
+.making:hover .making__info {
+  box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+}
+
+.making:active .making__info {
+  box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+}
+
 .making__title {
   position: relative;
   margin: 0;
@@ -40,8 +48,8 @@
 
 .making__play {
   position: absolute;
-  top: 36px;
-  left: 73px;
+  top: calc(50% - 38px);
+  left: calc(50% - 50px);
   width: 101px;
   height: 77px;
   padding: 0;
@@ -50,16 +58,30 @@
   cursor: pointer;
 }
 
+.making__play-icon {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.making__play:hover .making__play-icon {
+  transform: scale(1.2);
+}
+
+.making__play:active .making__play-icon {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
 .making__info {
   min-height: 257px;
-  padding: 26px 33px;
+  padding: 27px 33px;
   border: 1px solid #ececec;
   border-top: none;
+  transition: box-shadow 0.3s ease;
 }
 
 .making__description {
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;

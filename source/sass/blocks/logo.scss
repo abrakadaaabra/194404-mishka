@@ -6,12 +6,6 @@
   cursor: pointer;
   transition: opacity 0.3s ease;
 
-  &.logo--footer {
-    width: 102px;
-    height: 34px;
-    display: none;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -23,13 +17,47 @@
 
 .logo__image {
   width: 100%;
-  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.logo.logo--footer {
+  display: none;
+  width: 102px;
+  height: 34px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo.logo--footer .logo__image {
+  transition: fill 0.3s ease, opacity 0.3s ease;
+
+  fill: #231f20;
+}
+
+.logo.logo--footer:hover .logo__image {
+  fill: #46c1ae;
 }
 
 @media (min-width: $tablet-width) {
   .logo {
+    width: 113px;
+    height: 46px;
+
     &.logo--footer {
       display: block;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 149px;
+    height: 72px;
   }
 }

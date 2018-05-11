@@ -11,7 +11,12 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 322px 457px;
   border: none;
+
+  @media (min-resolution: $dpi), (min-resolution: $dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 }
 
 .map__pin {
@@ -20,9 +25,29 @@
   left: 138px;
 }
 
+@media (min-width: $tablet-width) {
+  .map__content {
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 768px 457px;
+
+    @media (min-resolution: $dpi), (min-resolution: $dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .map {
     width: 525px;
     height: 457px;
+  }
+
+  .map__content {
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 525px 457px;
+
+    @media (min-resolution: $dpi), (min-resolution: $dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

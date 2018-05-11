@@ -40,6 +40,10 @@
       height: 62px;
       background-image: url("../img/icon-interior.svg");
     }
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &.category--toy {
@@ -53,6 +57,10 @@
       width: 60px;
       height: 60px;
       background-image: url("../img/icon-toy.svg");
+    }
+
+    &:hover {
+      background-color: #46c1ae;
     }
   }
 }

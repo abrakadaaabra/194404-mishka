@@ -57,7 +57,7 @@
 
   &.order-form__input--single {
     margin-bottom: 32px;
-    padding-top: 22px;
+    padding-top: 15px;
   }
 }
 
@@ -96,7 +96,7 @@
 
   .order-form__group {
     flex-basis: 100%;
-    padding: 50px 50px;
+    padding: 50px 50px 46px;
 
 
     &:nth-of-type(2n) {
@@ -119,31 +119,31 @@
     padding: 0;
 
     &.order-form__controls-group--radio {
-      margin-bottom: -24px;
+      margin-bottom: -18px;
       padding: 0;
     }
 
     &.order-form__controls-group--checkbox {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: -26px;
+      margin-bottom: -22px;
       padding: 0;
     }
 
     &.order-form__controls-group--input {
-      margin-bottom: -24px;
+      margin-bottom: -20px;
       padding: 0;
     }
   }
 
   .order-form__radio {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   .order-form__checkbox {
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     &:nth-of-type(2n+1) {
       margin-right: 52px;
@@ -168,8 +168,8 @@
   .order-form__textarea {
     display: block;
     flex-basis: calc(100% - 167px);
-    margin-top: 0;
-    margin-bottom: 3px;
+    margin-top: 4px;
+    margin-bottom: 7px;
   }
 
   .order-form__bottom {
@@ -209,28 +209,28 @@
   }
 
   .order-form__group {
-    padding: 50px;
+    padding: 50px 50px 45px;
   }
 
   .order-form__controls-group {
     flex-basis: calc(100% - 231px);
 
     &.order-form__controls-group--radio {
-      margin-bottom: -26px;
+      margin-bottom: -18px;
     }
 
     &.order-form__controls-group--checkbox {
-      margin-bottom: -28px;
+      margin-bottom: -21px;
     }
 
     &.order-form__controls-group--input {
-      margin-bottom: -24px;
+      margin-bottom: -19px;
     }
   }
 
   .order-form__checkbox {
     margin-right: 52px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   .order-form__input {
@@ -241,7 +241,8 @@
 
   .order-form__textarea {
     flex-basis: calc(100% - 112px);
-    margin-bottom: -2px;
+    margin-bottom: 3px;
+    margin-top: 5px;
   }
 
   .order-form__bottom {
