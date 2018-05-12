@@ -24,6 +24,7 @@
   width: 100%;
   fill: #63d1bb;
   transition: fill 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .made__link:hover .made__logo {

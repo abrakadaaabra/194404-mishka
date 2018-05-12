@@ -65,30 +65,21 @@
 .main-menu__link.main-menu__link--cart {
   margin-left: calc(17% - 45px);
   padding-left: 45px;
+}
 
-  &:hover {
-    .main-menu__search-icon {
-      fill: rgba($sea, 1);
-    }
+.main-menu__link.main-menu__link--search:hover .main-menu__search-icon,
+.main-menu__link.main-menu__link--cart:hover .main-menu__cart-icon {
+  fill: rgba($sea, 1);
+}
 
-    .main-menu__cart-icon {
-      fill: rgba($sea, 1);
-    }
-  }
-
-  &:active {
-    .main-menu__search-icon {
-      fill: rgba($sea, 0.3);
-    }
-
-    .main-menu__cart-icon {
-      fill: rgba($sea, 0.3);
-    }
-  }
+.main-menu__link.main-menu__link--search:active .main-menu__search-icon,
+.main-menu__link.main-menu__link--cart:active .main-menu__cart-icon {
+  fill: rgba($sea, 0.3);
 }
 
 .main-menu__search-icon,
 .main-menu__cart-icon {
+  pointer-events: none;
   position: absolute;
   top: 4px;
   left: 2px;

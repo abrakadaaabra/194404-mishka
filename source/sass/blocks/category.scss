@@ -22,10 +22,6 @@
     &::after {
       opacity: 0.3;
     }
-
-    .category__title {
-      color: rgba($white, 0.3);
-    }
   }
 
   &.category--interior {
@@ -63,6 +59,10 @@
       background-color: #46c1ae;
     }
   }
+}
+
+.category:active .category__title {
+  color: rgba($white, 0.3);
 }
 
 .category__title {
