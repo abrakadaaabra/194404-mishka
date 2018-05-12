@@ -209,26 +209,25 @@
       </div>
     </footer>
     <section class="popup popup--cart">
-      <h2 class="popup__title">Добавить в корзину</h2>
-      <span class="popup__label">Выберите размер</span>
-      <form class="size-form" method="POST" action="https://echo.htmlacademy.ru">
-        <label class="size-form__label">
-          <span class="visually-hidden">Размер S</span>
-          S
-          <input class="size-form__input" type="radio" name="size" value="S" checked/>
-        </label>
-        <label class="size-form__label">
-          <span class="visually-hidden">Размер M</span>
-          M
-          <input class="size-form__input" type="radio" name="size" value="M" />
-        </label>
-        <label class="size-form__label">
-          <span class="visually-hidden">Размер L</span>
-          L
-          <input class="size-form__input" type="radio" name="size" value="L" />
-        </label>
-        <button class="size-form__button button" type="submit">Добавить</button>
-      </form>
+      <div class="popup__wrapper container">
+        <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
+        <span class="popup__label">Выберите размер</span>
+        <form class="popup__form size-form" method="POST" action="https://echo.htmlacademy.ru">
+          <label class="size-form__radio size-btn">
+            <input class="size-btn__control visually-hidden" type="radio" name="size" value="S" checked>
+            <span class="size-btn__label">S</span>
+          </label>
+          <label class="size-form__radio size-btn">
+            <input class="size-btn__control visually-hidden" type="radio" name="size" value="M">
+            <span class="size-btn__label">M</span>
+          </label>
+          <label class="size-form__radio size-btn">
+            <input class="size-btn__control visually-hidden" type="radio" name="size" value="L">
+            <span class="size-btn__label">L</span>
+          </label>
+          <button class="size-form__button button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
