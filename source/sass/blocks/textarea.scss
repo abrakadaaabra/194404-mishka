@@ -27,5 +27,6 @@
 @media (min-width: $desktop-width) {
   .textarea {
     width: calc(100% - 112px);
+    flex-basis: auto;
   }
 }
