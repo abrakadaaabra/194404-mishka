@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.js" async></script>
-    <script>svg4everybody();</script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function (e) {
+        svg4everybody();
+      });
+    </script>
     <script src="js/svgxuse.js" async></script>
   </head>
 
