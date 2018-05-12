@@ -31,7 +31,11 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-*.svg",
+    "source/img/logo-footer.svg",
+    "source/img/logo-htmlacademy.svg"
+  ])
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -46,7 +50,7 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 })
 gulp.task("images", function () {
-  return gulp.src("source/img/*.{png, jpg, svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
