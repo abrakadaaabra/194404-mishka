@@ -14,6 +14,11 @@ body {
   line-height: 24px;
   font-family: $mainFont;
   color: $textColor;
+
+  @media (min-width: $desktop-width) {
+    overflow-x: hidden;
+    min-width: 1150px;
+  }
 }
 
 a {
