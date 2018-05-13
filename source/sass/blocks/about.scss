@@ -23,7 +23,7 @@
 
 .about__item {
   position: relative;
-  flex-basis: 260px;
+  width: 260px;
   margin-right: auto;
   padding-top: 56px;
   padding-right: 10px;
@@ -33,10 +33,6 @@
   line-height: 20px;
   font-family: $mainFont;
   color: $black;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
 
   &:last-child {
     padding-bottom: 0;
@@ -129,21 +125,13 @@
   }
 
   .about__item {
-    flex-basis: 300px;
-    margin-right: 33px;
+    width: 50%;
+    margin-right: 0;
     padding-top: 72px;
     padding-right: 0;
     padding-bottom: 40px;
     font-size: 20px;
     line-height: 22px;
-
-    &:nth-child(2n) {
-      margin-right: 33px;
-    }
-
-    &:nth-of-type(n+4) {
-      margin-right: 0;
-    }
 
     &.about__item--eco {
       order: 1;
@@ -216,7 +204,7 @@
   }
 
   .about__item {
-    flex-basis: 45%;
+    width: 45%;
     margin-right: 5%;
   }
 }
