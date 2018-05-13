@@ -258,14 +258,15 @@
     &.main-menu__item--catalog {
       order: 1;
       width: 185px;
-      padding-top: 31px;
+      padding: 31px 0;
       border-right: 1px solid #ececec;
     }
 
     &.main-menu__item--knitting {
       order: 2;
       margin-right: 73px;
-      padding-top: 31px;
+      width: 156px;
+      padding: 31px 0;
     }
 
     &.main-menu__item--search {
@@ -291,11 +292,12 @@
       display: block;
       order: 7;
       min-height: auto;
-      margin-right: auto;
+      margin-right: 61px;
       padding-top: 18px;
     }
 
     &.main-menu__item--delivery {
+      margin-left: auto;
       display: block;
       order: 8;
       min-height: auto;
