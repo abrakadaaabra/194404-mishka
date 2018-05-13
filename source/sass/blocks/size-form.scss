@@ -1,0 +1,22 @@
+.size-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-form__radio {
+  margin-right: 7px;
+  margin-bottom: 31px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.size-form__button {
+  width: 100%;
+  border-color: #63d1bb;
+
+  &:hover {
+    background: #63d1bb;
+  }
+}
