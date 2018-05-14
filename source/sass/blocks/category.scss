@@ -24,7 +24,7 @@
     }
   }
 
-  &.category--interior {
+  &--interior {
     z-index: 2;
     background-color: #63d1bb;
     transition: background-color 0.3s ease;
@@ -42,7 +42,7 @@
     }
   }
 
-  &.category--toy {
+  &--toy {
     z-index: 3;
     background-color: #56c3b2;
     transition: background-color 0.3s ease;
@@ -82,14 +82,14 @@
     flex-grow: 1;
     padding: 28px 35px 31px;
 
-    &.category--interior {
+    &--interior {
       &::after {
         top: 30px;
         right: 37px;
       }
     }
 
-    &.category--toy {
+    &--toy {
       &::after {
         top: 31px;
         right: 34px;

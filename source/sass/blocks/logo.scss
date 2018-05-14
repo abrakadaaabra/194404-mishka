@@ -21,7 +21,7 @@
   pointer-events: none;
 }
 
-.logo.logo--footer {
+.logo--footer {
   display: none;
   width: 102px;
   height: 34px;
@@ -35,13 +35,13 @@
   }
 }
 
-.logo.logo--footer .logo__image {
+.logo--footer .logo__image {
   transition: fill 0.3s ease, opacity 0.3s ease;
 
   fill: #231f20;
 }
 
-.logo.logo--footer:hover .logo__image {
+.logo--footer:hover .logo__image {
   fill: #46c1ae;
 }
 
