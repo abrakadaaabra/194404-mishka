@@ -48,12 +48,12 @@
 
   fill: rgba($black, 0.2);
 
-  &.input__icon--phone {
+  &--phone {
     right: 9px;
     bottom: 17px;
   }
 
-  &.input__icon--email {
+  &--email {
     right: 4px;
     bottom: 9px;
   }
@@ -83,11 +83,11 @@
   }
 
   .input__icon {
-    &.input__icon--phone {
+    &--phone {
       right: 27px;
     }
 
-    &.input__icon--email {
+    &--email {
       right: 21px;
     }
   }
@@ -95,11 +95,11 @@
 
 @media (min-width: $desktop-width) {
   .input__icon {
-    &.input__icon--phone {
+    &--phone {
       right: 8px;
     }
 
-    &.input__icon--email {
+    &--email {
       right: 4px;
     }
   }
