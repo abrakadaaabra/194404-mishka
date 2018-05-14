@@ -198,6 +198,8 @@
   }
 
   .main-menu__link {
+    margin-left: 0;
+
     &--catalog {
       font-size: 15px;
     }
@@ -264,8 +266,8 @@
 
     &--knitting {
       order: 2;
-      margin-right: 73px;
       width: 156px;
+      margin-right: 73px;
       padding: 31px 0;
     }
 
@@ -297,10 +299,10 @@
     }
 
     &--delivery {
-      margin-left: auto;
       display: block;
       order: 8;
       min-height: auto;
+      margin-left: auto;
       padding-top: 17px;
       font-size: 15px;
       line-height: 24px;
