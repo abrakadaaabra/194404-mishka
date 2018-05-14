@@ -25,7 +25,7 @@
 @media (min-width: $tablet-width) {
   .intro {
     position: relative;
-    min-height: 585px;
+    min-height: 715px;
     padding: 241px 0;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 88px;
@@ -44,7 +44,6 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 584px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center 87px;
 
